@@ -54,8 +54,8 @@ export function Main() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 font-sans">
-                    {menu.breakfast ? menu.breakfast.split('/').map((menuData:string) => (
-                      <li>{menuData}</li>
+                    {menu.breakfast ? menu.breakfast.split('/').map((menuData:string, i) => (
+                      <li key={i}>{menuData}</li>
                     )) : <li>데이터가 없습니다.</li>}
                   </ul>
                 </CardContent>
@@ -66,8 +66,8 @@ export function Main() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 font-sans">
-                    {menu.lunch ? menu.lunch.split('/').map((menuData:string) => (
-                      <li>{menuData}</li>
+                    {menu.lunch ? menu.lunch.split('/').map((menuData:string, i) => (
+                      <li key={i}>{menuData}</li>
                     )) : <li>데이터가 없습니다.</li>}
                   </ul>
                 </CardContent>
@@ -78,8 +78,8 @@ export function Main() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 font-sans">
-                    {menu.dinner ? menu.dinner.split('/').map((menuData:string) => (
-                      <li>{menuData}</li>
+                    {menu.dinner ? menu.dinner.split('/').map((menuData:string, i) => (
+                      <li key={i}>{menuData}</li>
                     )) : <li>데이터가 없습니다.</li>}
                   </ul>
                 </CardContent>
